@@ -33,4 +33,5 @@ while dir_count < 9 do
   dir_count += 1
 
 end
+my_hash
 end
