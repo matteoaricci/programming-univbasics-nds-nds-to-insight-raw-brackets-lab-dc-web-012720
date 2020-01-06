@@ -27,11 +27,11 @@ while i < directors_database.length do
 
  j = 0
  total = 0
-  while j < nds[i][:movies].length do
-    total += nds[i][:movies][j][:worldwide_gross]
+  while j < directors_database[i][:movies].length do
+    total += directors_database[i][:movies][j][:worldwide_gross]
     j += 1
   end
-  my_hash[nds[i][:name]] = total
+  my_hash[directors_database[i][:name]] = total
   i += 1
 end
 my_hash
