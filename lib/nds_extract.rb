@@ -28,3 +28,5 @@ def directors_totals(nds)
   end
   puts my_hash
 end
+
+directors_totals(directors_database)
