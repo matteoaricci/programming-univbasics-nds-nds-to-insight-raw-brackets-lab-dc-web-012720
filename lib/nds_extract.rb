@@ -23,7 +23,7 @@ def directors_totals(nds)
   my_hash = {}
 dir_count = 0
 while dir_count < 9 do
-  my_hash[dir_count] << nds[:names][dir_count]
+  my_hash[dir_count] << nds[dir_count][:names]
   wg_count = 0
   total = 0
   while wg_count < nds[0][:movies].length do
