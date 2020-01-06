@@ -20,5 +20,17 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  puts directors_database.length
+  my_hash = {}
+dir_count = 0
+while dir_count < 9 do
+  my_hash[dir_count] << directors_database[:names][dir_count]
+  wg_count = 0
+  total = 0
+  while wg_count < directors_database[0][:movies].length do
+    total += directors_database[0][:movies][wg_count][:worldwide_gross]
+    wg_count += 1
+  end
+  dir_count += 1
+
+end
 end
