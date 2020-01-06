@@ -21,12 +21,20 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   my_hash = {}
-  
-  count = 0 
-  while count < nds.length do
-    my_hash[count] = nds[dir_count][:names]
+i = 0
+while i < directors_database.length do
+ 
+
+ j = 0
+ total = 0
+  while j < directors_database[i][:movies].length do
+    total += directors_database[i][:movies][j][:worldwide_gross]
+    j += 1
   end
-  puts my_hash
+  my_hash[directors_database[i][:name]] = total
+  i += 1
+end
+my_hash
 end
 
 directors_totals(directors_database)
