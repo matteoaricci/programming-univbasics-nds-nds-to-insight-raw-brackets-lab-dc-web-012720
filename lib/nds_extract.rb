@@ -23,5 +23,8 @@ def directors_totals(nds)
   my_hash = {}
   
   count = 0 
-  while 
+  while count < nds.length do
+    my_hash[count] = nds[dir_count][:names]
+  end
+  puts my_hash
 end
